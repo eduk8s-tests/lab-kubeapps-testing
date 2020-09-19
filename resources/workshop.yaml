@@ -25,7 +25,7 @@ spec:
         enabled: true
     dashboards:
     - name: Kubeapps
-      url: $(ingress_protocol)://$(session_namespace)-kubeapps.$(ingress_domain)
+      url: $(ingress_protocol)://$(session_namespace)-kubeapps.$(ingress_domain)/#/c/default/ns/$(session_namespace)/apps
     ingresses:
     - name: kubeapps
       host: kubeapps.kubeapps.svc.cluster.local
