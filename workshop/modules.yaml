@@ -12,7 +12,7 @@ modules:
     exercises/03-adding-new-repositories:
         name: Adding New Repositories
     exercises/04-apprepositories-resource:
-        name: AppRespositories Resource
+        name: AppRepositories Resource
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
