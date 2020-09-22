@@ -1,4 +1,4 @@
-Although Kubeapps provides the ability to deploy applications into a Kubernetes cluster, it is not a replacement for needing to use a Kubernetes dashboard or command line tools such as `kubectl` for managing your application. The purpose of Kubeapps is to provide a developer an easy way to deploy pre-packaged applications, be these applications from the Bitnami Application Catalog, or specific applications approved by an organization, through the use of the Tanzu Application Catalog service.
+Although Kubeapps provides the ability to deploy applications into a Kubernetes cluster, it is not a replacement for needing to use a Kubernetes dashboard or command line tools such as `kubectl` for managing your application. The purpose of Kubeapps is to provide a developer an easy way to deploy pre-packaged applications, be these applications from the Bitnami Application Catalog, or specific applications approved by an organization, managed using the Tanzu Application Catalog service.
 
 You can therefore still use a Kubernetes dashboard to investigate the application which was deployed.
 

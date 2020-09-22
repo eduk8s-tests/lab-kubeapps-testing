@@ -8,7 +8,7 @@ This should bring up the page:
 
 ![](kubeapps-start-deployment.png)
 
-This confirms what application is to deployed and from which application repository. A suggested name for the deployment is automatically populated in the **Name** field.
+This confirms what application is to be deployed and from which application repository. A suggested name for the deployment is automatically populated in the **Name** field.
 
 Override the suggested name of the deployment and set it to:
 
@@ -40,7 +40,7 @@ Click on the link for the ingress to confirm the Apache HTTPD server is running.
 
 When done checking it works, head back here and click on **Applications** in the Kubeapps web interface.
 
-```reload-dashboard
+```dashboard:reload-dashboard
 name: Kubeapps
 url: {{ingress_protocol}}://{{session_namespace}}-kubeapps.{{ingress_domain}}/#/c/default/ns/{{session_namespace}}/apps
 ```

@@ -2,7 +2,7 @@ In order to deploy applications using Kubeapps, it first needs to be linked up t
 
 Usually the Kubeapps deployment for the cluster will be pre-configured to be linked to the application repository that developers within the cluster are permitted to deploy applications from.
 
-This can be the [Bitnami Application Catalog](https://bitnami.com/stacks), or may be a curated catalog specific to the owner of the Kubernetes cluster created using [Tanzu Application Catalog](https://tanzu.vmware.com/application-catalog).
+This can be the [Bitnami Application Catalog](https://bitnami.com/stacks), or may be a curated catalog specific to the owner of the Kubernetes cluster created using the [Tanzu Application Catalog](https://tanzu.vmware.com/application-catalog) service.
 
 To view whether a default application repository has been set for Kubeapps in the cluster that this workshop environment is running, click below, or on **Catalog** in the Kubeapps web interface.
 

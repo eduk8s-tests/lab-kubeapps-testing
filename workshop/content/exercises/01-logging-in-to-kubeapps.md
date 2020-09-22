@@ -1,6 +1,6 @@
 In order to access Kubeapps, you first need to log in to it.
 
-Access to Kubeapps can be configured in multiple ways. This can include integration with any existing login mechanism for users, for accessing the Kubernetes cluster.
+Access to Kubeapps can be configured in multiple ways. This can include integration with any existing login mechanism for users for accessing a Kubernetes cluster.
 
 If Kubeapps is not integrated with existing user access for a cluster, it will present a generic login page requesting a Kubernetes API token.
 
