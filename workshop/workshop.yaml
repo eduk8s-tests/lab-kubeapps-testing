@@ -8,5 +8,5 @@ modules:
     - exercises/02-application-repositories
     - exercises/03-adding-new-repositories
     - exercises/04-apprepository-resource
-    - exercises/05-selecting-application
+    - exercises/05-selecting-an-application
     - workshop-summary
