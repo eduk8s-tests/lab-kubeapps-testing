@@ -13,6 +13,8 @@ modules:
         name: Adding New Repositories
     exercises/04-apprepository-resource:
         name: AppRepository Resource
+    exercises/05-selecting-an-application:
+        name: Selecting an Application
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
