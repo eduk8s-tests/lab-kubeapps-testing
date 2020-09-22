@@ -1,14 +1,16 @@
-LAB - Markdown Sample
-=====================
+LAB - Kubeapps Testing
+======================
 
-Sample workshop content using Markdown formatting for pages.
+Workshop for testing use of Kubeapps.
+
+The workshop assumes you have Kubeapps installed in the `kubeapps` namespace.
 
 For more detailed information on how to create and deploy workshops, consult
-the documentation for eduk8s at:
+the documentation for edukates at:
 
-* https://docs.eduk8s.io
+* https://docs.edukates.io
 
-If you already have the eduk8s operator installed and configured, to deploy
+If you already have the edukates operator installed and configured, to deploy
 and view this sample workshop, run:
 
 ```
