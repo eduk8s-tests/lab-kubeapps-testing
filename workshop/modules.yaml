@@ -7,6 +7,8 @@ modules:
         exit_sign: Start Workshop
     exercises/01-logging-in-to-kubeapps:
         name: Logging in to Kubeapps
+    exercises/02-application-catalogs:
+        name: Application Catalogs
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
