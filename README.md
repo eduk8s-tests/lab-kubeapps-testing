@@ -3,7 +3,9 @@ LAB - Kubeapps Testing
 
 Workshop for testing use of Kubeapps.
 
-The workshop assumes you have Kubeapps installed in the `kubeapps` namespace.
+The workshop assumes you have Kubeapps installed in the `kubeapps`
+namespace. You need to have Kubeapps 1.11 or newer (tested with 1.11.3), it
+will not work with 1.10.
 
 For more detailed information on how to create and deploy workshops, consult
 the documentation for edukates at:
