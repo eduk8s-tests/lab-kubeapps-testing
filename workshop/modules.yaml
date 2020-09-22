@@ -9,6 +9,10 @@ modules:
         name: Logging in to Kubeapps
     exercises/02-application-repositories:
         name: Application Repositories
+    exercises/03-adding-new-repositories:
+        name: Adding New Repositories
+    exercises/04-apprepositories-resource:
+        name: AppRespositories Resource
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
