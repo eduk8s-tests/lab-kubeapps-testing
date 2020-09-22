@@ -11,8 +11,8 @@ modules:
         name: Application Repositories
     exercises/03-adding-new-repositories:
         name: Adding New Repositories
-    exercises/04-apprepositories-resource:
-        name: AppRepositories Resource
+    exercises/04-apprepository-resource:
+        name: AppRepository Resource
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
