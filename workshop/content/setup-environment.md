@@ -5,3 +5,5 @@ To test that Kubeapps is installed and available, click on the **Kubeapps** dash
 ```dashboard:open-dashboard
 name: Kubeapps
 ```
+
+You should be presented with the login page for Kubeapps.
