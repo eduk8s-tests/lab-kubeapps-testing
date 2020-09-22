@@ -10,4 +10,6 @@ modules:
     - exercises/04-apprepository-resource
     - exercises/05-selecting-an-application
     - exercises/06-deploying-an-application
+    - exercises/07-kubernetes-dashboard
+    - exercises/08-deleting-the-application
     - workshop-summary

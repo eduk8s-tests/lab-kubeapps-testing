@@ -17,6 +17,10 @@ modules:
         name: Selecting an Application
     exercises/06-deploying-an-application:
         name: Deploying an Application
+    exercises/07-kubernetes-dashboard:
+        name: Kubernetes Dashboard
+    exercises/08-deleting-the-application:
+        name: Deleting the Application
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

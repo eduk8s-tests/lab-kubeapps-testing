@@ -37,3 +37,14 @@ This will bring up details of the deployment, and when deployment is complete, i
 ![](kubeapps-apache-deployment-details.png)
 
 Click on the link for the ingress to confirm the Apache HTTPD server is running. A new browser tab or window should be created and you should see a response of "It works!".
+
+When done checking it works, head back here and click on **Applications** in the Kubeapps web interface.
+
+```reload-dashboard
+name: Kubeapps
+url: {{ingress_protocol}}://{{session_namespace}}-kubeapps.{{ingress_domain}}/#/c/default/ns/{{session_namespace}}/apps
+```
+
+This should land you on the list of applications which have been deployed to the namespace through Kubeapps.
+
+![](kubeapps-application-list.png)
