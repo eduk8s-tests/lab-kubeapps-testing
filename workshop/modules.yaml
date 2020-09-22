@@ -15,6 +15,8 @@ modules:
         name: AppRepository Resource
     exercises/05-selecting-an-application:
         name: Selecting an Application
+    exercises/06-deploying-an-application:
+        name: Deploying an Application
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

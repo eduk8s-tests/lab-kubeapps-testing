@@ -9,4 +9,5 @@ modules:
     - exercises/03-adding-new-repositories
     - exercises/04-apprepository-resource
     - exercises/05-selecting-an-application
+    - exercises/06-deploying-an-application
     - workshop-summary
