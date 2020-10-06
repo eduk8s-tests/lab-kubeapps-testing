@@ -11,9 +11,11 @@ You should be presented with the page:
 
 ![](kubeapps-add-repositories.png)
 
-It will be empty at this point as no additional respositories have yet been added to the selected namespace.
+If there are any globally enabled catalogs they will be listed.
 
-To add a new application repository, click on the **Add App Repository** button. This will yield the popup:
+There should not be any catalogs registered against the current namespace.
+
+To add a new application repository to the current namespace, click on the **Add App Repository** button. This will yield the popup:
 
 ![](kubeapps-add-repository-popup.png)
 
@@ -33,6 +35,6 @@ All other fields can be left empty for this example.
 
 Click on **Install Repo** at the bottom of the popup to add this application repository.
 
-You should now see this repository listed.
+You should now see this repository listed against the namespace.
 
 ![](kubeapps-repository-list.png)
