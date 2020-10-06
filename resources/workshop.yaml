@@ -35,6 +35,19 @@ spec:
         value: Bearer $(kubernetes_token)
     objects:
     - apiVersion: rbac.authorization.k8s.io/v1
+      kind: RoleBinding
+      metadata:
+        name: $(session_namespace)-kubeapps-user
+        namespace: kubeapps
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: Role
+        name: $(workshop_namespace)-kubeapps-user
+      subjects:
+      - kind: ServiceAccount
+        namespace: $(workshop_namespace)
+        name: $(service_account)
+    - apiVersion: rbac.authorization.k8s.io/v1
       kind: Role
       metadata:
         name: kubeapps-user
@@ -48,6 +61,7 @@ spec:
         - delete
         - get
         - list
+        - update
     - apiVersion: rbac.authorization.k8s.io/v1
       kind: RoleBinding
       metadata:
@@ -60,3 +74,18 @@ spec:
       - kind: ServiceAccount
         namespace: $(workshop_namespace)
         name: $(service_account)
+  environment:
+    objects:
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: Role
+      metadata:
+        name: $(workshop_namespace)-kubeapps-user
+        namespace: kubeapps
+      rules:
+      - apiGroups:
+        - kubeapps.com
+        resources:
+        - apprepositories
+        verbs:
+        - get
+        - list
