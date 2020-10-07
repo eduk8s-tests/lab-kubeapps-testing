@@ -8,7 +8,7 @@ If Kubeapps is not integrated with existing user access for a cluster, it will p
 
 For this workshop environment, a service account has been created for you to use with Kubeapps.
 
-Click on the details of the API token for the service account below to copy it to your browser paste buffer, then paste it into the Kubeapps login page and click on **Login**.
+Click on the details of the API token for the service account below to copy it to your browser paste buffer, then paste it into the Kubeapps login page and click on **Submit**.
 
 ```copy
 {{KUBEAPPS_TOKEN}}
