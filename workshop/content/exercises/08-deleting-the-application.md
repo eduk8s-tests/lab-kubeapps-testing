@@ -24,7 +24,3 @@ Click on the big red **Delete** button. A popup should be displayed asking you t
 Click on **Delete** to confirm.
 
 You will be returned to your list of applications (which should now be empty), and the deployment will be deleted in the background.
-
-{% comment %}
-You can select **Show deleted apps** to show deleted applications as a record is kept, and even click through to get a summary of the installation values used in case you need to recreate the deployment in the future.
-{% endcomment %}
