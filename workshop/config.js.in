@@ -1,0 +1,9 @@
+function initialize(workshop) {
+    workshop.load_workshop();
+
+    workshop.data_variable("KUBEAPPS_TOKEN", "${KUBEAPPS_TOKEN}");
+}
+
+exports.default = initialize;
+
+module.exports = exports.default;
