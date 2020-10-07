@@ -25,15 +25,11 @@ spec:
         enabled: true
     dashboards:
     - name: Kubeapps
-      #url: $(ingress_protocol)://$(session_namespace)-kubeapps.$(ingress_domain)/#/c/default/ns/$(session_namespace)/apps
       url: $(ingress_protocol)://$(session_namespace)-kubeapps.$(ingress_domain)/
     ingresses:
     - name: kubeapps
       host: kubeapps.kubeapps.svc.cluster.local
       port: 0
-      #headers:
-      #- name: Authorization
-      #  value: Bearer $(kubernetes_token)
     objects:
     - apiVersion: v1
       kind: ServiceAccount
