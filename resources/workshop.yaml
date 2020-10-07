@@ -78,6 +78,9 @@ spec:
       - kind: ServiceAccount
         namespace: $(session_namespace)
         name: kubeapps-user
+      - kind: ServiceAccount
+        namespace: $(workshop_namespace)
+        name: $(service_account)
     - apiVersion: rbac.authorization.k8s.io/v1
       kind: RoleBinding
       metadata:
