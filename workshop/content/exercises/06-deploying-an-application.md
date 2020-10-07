@@ -30,7 +30,7 @@ In this case you are making use of the ingress domain name used for the workshop
 
 Before triggering deployment of an application, you can review any changes made to the default Helm deployment templates for the application based on options selected for the application through Kubeapps. You can also review the raw YAML for the Helm template.
 
-When ready, click on **Submit** at the bottom of the page to start the deployment.
+When ready, click on **Deploy** at the bottom of the page to start the deployment.
 
 This will bring up details of the deployment, and when deployment is complete, it should show as **Ready**.
 

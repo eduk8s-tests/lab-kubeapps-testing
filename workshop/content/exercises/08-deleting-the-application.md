@@ -1,6 +1,6 @@
 The deployment of the application can be deleted from the Kubernetes dashboard or from the command line using `kubectl`, but this means you have to know precisely what all the Kubernetes resources that were created were.
 
-The better method therefore is to use Kubeapps to delete the deployment. This will make use of the Helm templates used in the deployment, to ensure that all the resources created are correctly deleted.
+The better method therefore is to use Kubeapps to delete the deployment. This will make use of the Helm templates used in the deployment, to ensure that all the resources created are correctly deleted,
 
 Head back to Kubeapps by clicking on the **Kubeapps** tab.
 
@@ -25,4 +25,6 @@ Click on **Delete** to confirm.
 
 You will be returned to your list of applications (which should now be empty), and the deployment will be deleted in the background.
 
+{% comment %}
 You can select **Show deleted apps** to show deleted applications as a record is kept, and even click through to get a summary of the installation values used in case you need to recreate the deployment in the future.
+{% endcomment %}
