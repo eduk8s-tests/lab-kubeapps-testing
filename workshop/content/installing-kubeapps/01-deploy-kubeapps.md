@@ -7,8 +7,10 @@ command: helm repo add stable https://charts.helm.sh/stable
 ```
 
 ```terminal:execute
-command: helm install dex stable/dex --namespace dex  --values dex-values.yaml
+command: helm install dex stable/dex --namespace dex --values dex-values.yaml
 ```
+
+{{ingress_protocol}}://{{session_namespace}}-dex.{{ingress_domain}}/
 
 ```terminal:execute
 command: helm repo add bitnami https://charts.bitnami.com/bitnami

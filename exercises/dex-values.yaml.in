@@ -1,5 +1,7 @@
 config:
   issuer: ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}
+  web:
+    http: 0.0.0.0:5556
   storage:
     type: memory
   enablePasswordDB: true
