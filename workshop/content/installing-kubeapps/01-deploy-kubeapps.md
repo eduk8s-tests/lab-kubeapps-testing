@@ -25,7 +25,7 @@ command: kubectl create ns kubeapps
 ```
 
 ```terminal:execute
-command: helm install kubeapps -n kubeapps bitnami/kubeapps
+command: helm install kubeapps bitnami/kubeapps --namespace kubeapps --values kubeapps-auth-proxy-values.yaml
 ```
 
 ```terminal:execute
