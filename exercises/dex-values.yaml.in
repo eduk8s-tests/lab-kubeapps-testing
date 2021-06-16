@@ -16,7 +16,7 @@ config:
   staticClients:
   - id: default
     redirectURIs:
-      # - ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-kubeapps/oauth2/callback
-      - http://${SESSION_NAMESPACE}-kubeapps/oauth2/callback
+      # - ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-kubeapps.${INGRESS_DOMAIN}/oauth2/callback
+      - http://${SESSION_NAMESPACE}-kubeapps.${INGRESS_DOMAIN}/oauth2/callback
     name: "Kubeapps"
     secret: ZXhhbXBsZS1hcHAtc2VjcmV0

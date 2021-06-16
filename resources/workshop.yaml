@@ -266,7 +266,7 @@ spec:
           app: dex
       spec:
         rules:
-        - host: {{session_namespace}}-dex.{{ingress_domain}}
+        - host: "$(session_namespace)-dex.$(ingress_domain)"
           http:
             paths:
             - path: "/"
@@ -285,7 +285,7 @@ spec:
           app: kubeapps
       spec:
         rules:
-        - host: {{session_namespace}}-kubeapps.{{ingress_domain}}
+        - host: "$(session_namespace)-kubeapps.$(ingress_domain)"
           http:
             paths:
             - path: "/"
