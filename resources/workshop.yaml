@@ -29,6 +29,9 @@ spec:
       editor:
         enabled: true
     ingresses:
+    - name: dex
+      host: dex-x-dex-x-vc.$(session_namespace)-vc.svc.cluster.local
+      port: 5556
     - name: kubeapps
       host: kubeapps-x-kubeapps-x-vc.$(session_namespace)-vc.svc.cluster.local
       port: 80
