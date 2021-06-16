@@ -28,6 +28,10 @@ spec:
         vendor: octant
       editor:
         enabled: true
+    ingresses:
+    - name: kubeapps
+      host: kubeapps-x-kubeapps-x-vc.$(session_namespace)-vc.svc.cluster.local
+      port: 80
     objects:
     - apiVersion: v1
       kind: ServiceAccount
