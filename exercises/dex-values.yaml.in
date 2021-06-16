@@ -1,5 +1,6 @@
 config:
-  issuer: ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}
+  #issuer: ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}
+  issuer: http://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}
   storage:
     type: memory
   enablePasswordDB: true
@@ -15,6 +16,7 @@ config:
   staticClients:
   - id: default
     redirectURIs:
-      - ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-kubeapps/oauth2/callback
+      # - ${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-kubeapps/oauth2/callback
+      - http://${SESSION_NAMESPACE}-kubeapps/oauth2/callback
     name: "Kubeapps"
     secret: ZXhhbXBsZS1hcHAtc2VjcmV0

@@ -14,6 +14,8 @@ command: helm install dex stable/dex --namespace dex --values dex-values.yaml
 command: kubectl rollout status deployment/dex -n dex
 ```
 
+http://{{session_namespace}}-dex.{{ingress_domain}}/.well-known/openid-configuration
+
 {{ingress_protocol}}://{{session_namespace}}-dex.{{ingress_domain}}/.well-known/openid-configuration
 
 ```terminal:execute
@@ -31,5 +33,7 @@ command: helm install kubeapps bitnami/kubeapps --namespace kubeapps --values ku
 ```terminal:execute
 command: kubectl rollout status deployment/kubeapps -n kubeapps
 ```
+
+http://{{session_namespace}}-kubeapps.{{ingress_domain}}/
 
 {{ingress_protocol}}://{{session_namespace}}-kubeapps.{{ingress_domain}}/

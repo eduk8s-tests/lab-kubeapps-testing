@@ -28,13 +28,13 @@ spec:
         vendor: octant
       editor:
         enabled: true
-    ingresses:
-    - name: dex
-      host: dex-x-dex-x-vc.$(session_namespace)-vc.svc.cluster.local
-      port: 32000
-    - name: kubeapps
-      host: kubeapps-x-kubeapps-x-vc.$(session_namespace)-vc.svc.cluster.local
-      port: 80
+    # ingresses:
+    # - name: dex
+    #   host: dex-x-dex-x-vc.$(session_namespace)-vc.svc.cluster.local
+    #   port: 32000
+    # - name: kubeapps
+    #   host: kubeapps-x-kubeapps-x-vc.$(session_namespace)-vc.svc.cluster.local
+    #   port: 80
     objects:
     - apiVersion: v1
       kind: ServiceAccount
@@ -257,6 +257,44 @@ spec:
               resources:
                 requests:
                   storage: 5Gi
+    - apiVersion: networking.k8s.io/v1
+      kind: Ingress
+      metadata:
+        name: dex
+        namespace: $(session_namespace)-vc
+        labels:
+          app: dex
+      spec:
+        rules:
+        - host: {{session_namespace}}-dex.{{ingress_domain}}
+          http:
+            paths:
+            - path: "/"
+              pathType: Prefix
+              backend:
+                service:
+                  name: dex-x-dex-x-vc
+                  port:
+                    number: 32000
+    - apiVersion: networking.k8s.io/v1
+      kind: Ingress
+      metadata:
+        name: kubeapps
+        namespace: $(session_namespace)-vc
+        labels:
+          app: kubeapps
+      spec:
+        rules:
+        - host: {{session_namespace}}-kubeapps.{{ingress_domain}}
+          http:
+            paths:
+            - path: "/"
+              pathType: Prefix
+              backend:
+                service:
+                  name: kubeapps-x-kubeapps-x-vc
+                  port:
+                    number: 80
   environment:
     objects:
     - apiVersion: policy/v1beta1

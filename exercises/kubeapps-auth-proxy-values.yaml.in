@@ -5,6 +5,7 @@ authProxy:
   clientSecret: ZXhhbXBsZS1hcHAtc2VjcmV0
   cookieSecret: bm90LWdvb2Qtc2VjcmV0Cg==
   additionalFlags:
-    - --oidc-issuer-url=${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}
-    - --scope=openid email groups audience:server:client_id:second-cluster audience:server:client_id:third-cluster
-    - --ssl-insecure-skip-verify=true
+  # - "--oidc-issuer-url=${INGRESS_PROTOCOL}://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}"
+  - "--oidc-issuer-url=http://${SESSION_NAMESPACE}-dex.${INGRESS_DOMAIN}"
+  - "--scope=openid email groups audience:server:client_id:second-cluster audience:server:client_id:third-cluster"
+  - "--ssl-insecure-skip-verify=true"
