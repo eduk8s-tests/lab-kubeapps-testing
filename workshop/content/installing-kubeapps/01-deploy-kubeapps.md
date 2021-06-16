@@ -10,7 +10,11 @@ command: helm repo add stable https://charts.helm.sh/stable
 command: helm install dex stable/dex --namespace dex --values dex-values.yaml
 ```
 
-{{ingress_protocol}}://{{session_namespace}}-dex.{{ingress_domain}}/
+```terminal:execute
+command: kubectl rollout status deployment/dex -n dex
+```
+
+{{ingress_protocol}}://{{session_namespace}}-dex.{{ingress_domain}}/.well-known/openid-configuration
 
 ```terminal:execute
 command: helm repo add bitnami https://charts.bitnami.com/bitnami
