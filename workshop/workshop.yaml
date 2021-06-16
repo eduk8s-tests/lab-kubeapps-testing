@@ -4,6 +4,7 @@ modules:
     activate:
     - workshop-overview
     - setup-environment
+    - installing-kubeapps/01-deploy-kubeapps
     - exercises/01-logging-in-to-kubeapps
     - exercises/02-application-repositories
     - exercises/03-adding-new-repositories

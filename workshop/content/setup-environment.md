@@ -1,9 +1,16 @@
-This workshop environment relies on Kubeapps having already been separately installed into the Kubernetes cluster. It relies on Kubeapps having been installed into the `kubeapps` namespace and that Kubeapps login has not been integrated with any SSO product.
+This workshop environment uses a virtual Kubernetes cluster. To verify that
+the virtual Kubernetes cluster has started up correctly, run:
 
-To test that Kubeapps is installed and available, click on the **Kubeapps** dashboard tab.
-
-```dashboard:open-dashboard
-name: Kubeapps
+```terminal:execute
+command: kubectl get ns
 ```
 
-You should be presented with the login page for Kubeapps.
+You should see the namespaces listed below.
+
+```
+NAME              STATUS   AGE
+default           Active   5m
+kube-system       Active   5m
+kube-public       Active   5m
+kube-node-lease   Active   5m
+```

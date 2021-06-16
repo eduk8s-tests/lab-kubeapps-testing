@@ -71,6 +71,10 @@ spec:
         namespace: $(session_namespace)-vc
       rules:
         - apiGroups: [""]
+          resources: ["pods"]
+          resourceNames: ["vcluster-0"]
+          verbs: ["get"]
+        - apiGroups: [""]
           resources: ["pods/exec"]
           resourceNames: ["vcluster-0"]
           verbs: ["*"]

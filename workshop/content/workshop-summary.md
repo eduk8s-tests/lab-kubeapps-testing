@@ -1,6 +1,7 @@
 This is the end of the workshop.
 
-In it we have given you a brief tour of using Kubeapps to deploy applications in a Kubernetes cluster.
+In it we have given you a brief guide of installing Kubeapps, and then using
+Kubeapps to deploy applications in a Kubernetes cluster.
 
 For more details on Kubeapps see:
 

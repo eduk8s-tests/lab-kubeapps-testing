@@ -5,6 +5,8 @@ modules:
     setup-environment:
         name: Setup Environment
         exit_sign: Start Workshop
+    installing-kubeapps/01-deploy-kubeapps:
+        name: Deploying Kubeapps
     exercises/01-logging-in-to-kubeapps:
         name: Logging in to Kubeapps
     exercises/02-application-repositories:
