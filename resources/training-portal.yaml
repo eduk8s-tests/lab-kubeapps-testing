@@ -4,6 +4,7 @@ metadata:
   name: lab-kubeapps-testing
 spec:
   portal:
+    title: Developer Readiness Demos
     registration:
       type: anonymous
   workshops:
